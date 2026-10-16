@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="A code editor window showing HTML and CSS">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111823"/>
+      <stop offset="1" stop-color="#0d1420"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3dffb0"/>
+      <stop offset="1" stop-color="#5ab8ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" rx="22" fill="url(#bg)"/>
+  <rect x="1.5" y="1.5" width="637" height="477" rx="21" fill="none" stroke="url(#glow)" stroke-opacity="0.6" stroke-width="3"/>
+  <!-- window bar -->
+  <path d="M0 22a22 22 0 0 1 22-22h596a22 22 0 0 1 22 22v34H0z" fill="#172131"/>
+  <circle cx="34" cy="28" r="8" fill="#ff6b8a"/>
+  <circle cx="60" cy="28" r="8" fill="#ffd166"/>
+  <circle cx="86" cy="28" r="8" fill="#3dffb0"/>
+  <text x="320" y="34" text-anchor="middle" font-family="Courier New, monospace" font-size="15" fill="#8b9bb0">index.html — Class Cipher</text>
+  <!-- line numbers -->
+  <g font-family="Courier New, monospace" font-size="17" fill="#3a4a62">
+    <text x="26" y="96">1</text><text x="26" y="126">2</text><text x="26" y="156">3</text>
+    <text x="26" y="186">4</text><text x="26" y="216">5</text><text x="26" y="246">6</text>
+    <text x="26" y="276">7</text><text x="26" y="306">8</text><text x="26" y="336">9</text>
+    <text x="20" y="366">10</text><text x="20" y="396">11</text>
+  </g>
+  <!-- code -->
+  <g font-family="Courier New, monospace" font-size="17">
+    <text x="64" y="96"><tspan fill="#5ab8ff">&lt;nav&gt;</tspan></text>
+    <text x="88" y="126"><tspan fill="#5ab8ff">&lt;a</tspan> <tspan fill="#ffd166">href</tspan><tspan fill="#e6edf3">=</tspan><tspan fill="#3dffb0">"learn.html"</tspan><tspan fill="#5ab8ff">&gt;</tspan></text>
+    <text x="112" y="156" fill="#e6edf3">Learn</text>
+    <text x="88" y="186"><tspan fill="#5ab8ff">&lt;/a&gt;</tspan></text>
+    <text x="64" y="216"><tspan fill="#5ab8ff">&lt;/nav&gt;</tspan></text>
+    <text x="64" y="266"><tspan fill="#ff9ec0">nav</tspan> <tspan fill="#e6edf3">{</tspan></text>
+    <text x="88" y="296"><tspan fill="#5ab8ff">display</tspan><tspan fill="#e6edf3">:</tspan> <tspan fill="#3dffb0">flex</tspan><tspan fill="#e6edf3">;</tspan></text>
+    <text x="88" y="326"><tspan fill="#5ab8ff">padding</tspan><tspan fill="#e6edf3">:</tspan> <tspan fill="#ffd166">14px</tspan><tspan fill="#e6edf3">;</tspan></text>
+    <text x="64" y="356" fill="#e6edf3">}</text>
+    <text x="64" y="396" fill="#3a4a62">color: #3dffb0;</text>
+  </g>
+  <!-- blinking cursor -->
+  <rect x="270" y="380" width="10" height="20" fill="#3dffb0">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  <!-- decorative badges -->
+  <g font-family="Courier New, monospace" font-weight="bold" font-size="18">
+    <rect x="440" y="110" width="150" height="46" rx="12" fill="#3dffb0" fill-opacity="0.14" stroke="#3dffb0"/>
+    <text x="515" y="140" text-anchor="middle" fill="#3dffb0">HTML5</text>
+    <rect x="440" y="180" width="150" height="46" rx="12" fill="#5ab8ff" fill-opacity="0.14" stroke="#5ab8ff"/>
+    <text x="515" y="210" text-anchor="middle" fill="#5ab8ff">CSS3</text>
+    <rect x="440" y="250" width="150" height="46" rx="12" fill="#ff6b8a" fill-opacity="0.14" stroke="#ff6b8a"/>
+    <text x="515" y="280" text-anchor="middle" fill="#ff6b8a">GitHub</text>
+  </g>
+</svg>

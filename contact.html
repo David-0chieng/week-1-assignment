@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact form examples using HTML input types.">
+  <title>Class Cipher | Contact</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+  <!-- ========== NAVIGATION BAR ========== -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="images/favicon.svg" alt="Class Cipher logo">
+        <a href="index.html">Class&nbsp;Cipher</a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <section class="center section-title">
+      <span class="tag">Contact</span>
+      <h1>Contact <span class="gradient-text">Form</span></h1>
+      <p>This form demonstrates common HTML input types.</p>
+    </section>
+
+    <!-- ========== FORM ========== -->
+    <form action="#" method="post">
+
+      <!-- About you -->
+      <fieldset>
+        <legend>About You</legend>
+
+        <div class="form-row">
+          <div>
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="fname" placeholder="First name" required>
+          </div>
+          <div>
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" name="lname" placeholder="Last name" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="0700 000 000">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div>
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" name="pwd" minlength="8" placeholder="At least 8 characters">
+          </div>
+          <div>
+            <label for="site">GitHub repository link</label>
+            <input type="url" id="site" name="site" placeholder="https://github.com/username/repo">
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Preferences -->
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="topic">Favourite topic</label>
+        <select id="topic" name="topic">
+          <option value="">-- Choose one --</option>
+          <optgroup label="HTML">
+            <option value="forms">Forms and Input Types</option>
+            <option value="tables">Tables</option>
+            <option value="lists">Lists</option>
+          </optgroup>
+          <optgroup label="CSS">
+            <option value="box">The Box Model</option>
+            <option value="position">Positioning</option>
+            <option value="selectors">Selectors</option>
+          </optgroup>
+        </select>
+
+        <label for="lang">Pick a language (datalist)</label>
+        <input type="text" list="languages" id="lang" name="lang" placeholder="Choose a language">
+        <datalist id="languages">
+          <option value="HTML">
+          <option value="CSS">
+          <option value="JavaScript">
+          <option value="Python">
+        </datalist>
+
+        <label>Experience level</label>
+        <div>
+          <label class="inline-label"><input type="radio" name="level" value="beginner" checked> Beginner</label>
+          <label class="inline-label"><input type="radio" name="level" value="intermediate"> Intermediate</label>
+          <label class="inline-label"><input type="radio" name="level" value="advanced"> Advanced</label>
+        </div>
+
+        <label>I enjoy</label>
+        <div>
+          <label class="inline-label"><input type="checkbox" name="enjoy" value="html"> HTML</label>
+          <label class="inline-label"><input type="checkbox" name="enjoy" value="css"> CSS</label>
+          <label class="inline-label"><input type="checkbox" name="enjoy" value="git"> Git &amp; GitHub</label>
+        </div>
+      </fieldset>
+
+      <!-- More input types -->
+      <fieldset>
+        <legend>More Input Types</legend>
+
+        <div class="form-row">
+          <div>
+            <label for="date">Preferred date</label>
+            <input type="date" id="date" name="date">
+          </div>
+          <div>
+            <label for="time">Preferred time</label>
+            <input type="time" id="time" name="time">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div>
+            <label for="hours">Hours practised this week</label>
+            <input type="number" id="hours" name="hours" min="0" max="80" value="5">
+          </div>
+          <div>
+            <label for="color">Favourite colour</label>
+            <input type="color" id="color" name="color" value="#3dffb0">
+          </div>
+        </div>
+
+        <label for="confidence">Confidence level</label>
+        <input type="range" id="confidence" name="confidence" min="0" max="10" value="7">
+
+        <label for="upload">Upload a screenshot</label>
+        <input type="file" id="upload" name="upload" accept="image/*">
+
+        <input type="hidden" name="source" value="class-cipher-site">
+      </fieldset>
+
+      <!-- Message -->
+      <fieldset>
+        <legend>Your Message</legend>
+        <label for="msg">What would you like to tell us?</label>
+        <textarea id="msg" name="msg" rows="5" placeholder="Enter your message"></textarea>
+      </fieldset>
+
+      <!-- Buttons -->
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <button type="reset" class="btn btn-outline">Clear Form</button>
+    </form>
+
+    <!-- ========== IFRAME: MAP ========== -->
+    <section style="margin-top: 70px;">
+      <h2>Embedded Map</h2>
+      <p>An <code>&lt;iframe&gt;</code> can display content from another website, such as a map.</p>
+      <iframe
+        title="World map"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-180%2C-60%2C180%2C75&amp;layer=mapnik"
+        loading="lazy">
+      </iframe>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      <a href="index.html">Home</a>
+      <a href="learn.html">Learn</a>
+      <a href="contact.html">Contact</a>
+    </p>
+    <p>&copy; 2026 Class Cipher. Built with HTML &amp; CSS.</p>
+  </footer>
+
+  <a href="#top" id="top-btn" title="Back to top">Top</a>
+
+</body>
+</html>
