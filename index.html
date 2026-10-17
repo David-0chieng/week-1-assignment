@@ -3,126 +3,178 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A website built with HTML and CSS.">
-  <title>Class Cipher | Home</title>
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-  <!-- External stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Harbor Health brings people together to talk about everyday wellbeing.">
+  <title>Harbor Health | Home</title>
+  <link rel="icon" type="image/svg+xml" href="static/images/favicon.svg">
+  <link rel="stylesheet" href="static/css/index.css">
 </head>
-<body id="top">
-
-  <!-- ========== NAVIGATION BAR ========== -->
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="images/favicon.svg" alt="Class Cipher logo">
-        <a href="index.html">Class&nbsp;Cipher</a>
-      </div>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="learn.html">Learn</a></li>
-        <li><a href="contact.html">Contact</a></li>
+<body>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="brand-mark">H</span><span>Harbor Health</span></a>
+      <ul class="nav-links">
+        <li><a class="current" href="index.html" aria-current="page">Home</a></li>
+        <li><a href="programs.html">Services</a></li>
+        <li><a class="nav-cta" href="register.html">Get in touch</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- ========== HERO ========== -->
   <main>
-    <section id="hero" class="container">
-      <div>
-        <span class="tag">HTML and CSS project</span>
-        <h1>A website built with<br><span class="gradient-text">HTML and CSS.</span></h1>
-        <p>
-          <strong>Class Cipher</strong> is a three-page site demonstrating HTML
-          elements and CSS styles. Browse the topic reference and try the contact form.
+    <section class="hero page-width">
+      <div class="hero-copy">
+        <p class="eyebrow">Everyday wellbeing, together</p>
+        <h1>A place to talk about <span>feeling well.</span></h1>
+        <p class="hero-text">
+          Good health is part of daily life. Harbor Health brings people
+          together to share ideas about food, movement, rest and looking after
+          ourselves.
         </p>
-        <a href="learn.html" class="btn btn-primary">View Topics</a>
-        <a href="contact.html" class="btn btn-outline">Open Contact Form</a>
+        <a class="button" href="programs.html">Explore our sessions</a>
       </div>
-      <img src="images/hero.svg" alt="Illustration of a code editor with HTML and CSS">
-    </section>
-
-    <!-- ========== FEATURE CARDS ========== -->
-    <section id="features" class="container">
-      <div class="section-title center">
-        <h2>Site Contents</h2>
-        <p>Examples of HTML elements and CSS styles across three pages.</p>
-      </div>
-
-      <div class="grid-3">
-        <div class="card">
-          <h3>HTML Topics</h3>
-          <p>Examples include headings, lists, tables, forms and iframes.</p>
-          <a href="learn.html#html-topics">View HTML topics</a>
-        </div>
-        <div class="card">
-          <h3>CSS Topics</h3>
-          <p>Examples include selectors, the box model, layout and form styles.</p>
-          <a href="learn.html#css-topics">View CSS topics</a>
-        </div>
-        <div class="card">
-          <h3>Contact Form</h3>
-          <p>The form demonstrates common HTML fields and input types.</p>
-          <a href="contact.html">View the form</a>
-        </div>
+      <div class="hero-art" role="img" aria-label="Illustration of a person and a health cross">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="chip"><span class="health-cross">+</span><small>WELLBEING</small></div>
+        <span class="art-label label-one">MOVE</span>
+        <span class="art-label label-two">REST</span>
+        <span class="art-label label-three">CONNECT</span>
       </div>
     </section>
 
-    <!-- ========== STATS ========== -->
-    <section id="stats">
-      <div class="container">
-        <div class="stats-grid">
-          <div class="stat"><strong>3</strong><span>Pages</span></div>
-          <div class="stat"><strong>13</strong><span>HTML Topics</span></div>
-          <div class="stat"><strong>11</strong><span>CSS Topics</span></div>
-          <div class="stat"><strong>1</strong><span>Shared Stylesheet</span></div>
+    <section class="about section-space">
+      <div class="page-width about-grid">
+        <div>
+          <p class="eyebrow">About Harbor Health</p>
+          <h2>A friendly place to start</h2>
+        </div>
+        <div>
+          <p>
+            Health advice can feel like a lot to take in. We keep the
+            conversation practical and make room for questions, shared
+            experiences and different points of view.
+          </p>
+          <p>
+            Our sessions cover everyday topics like food, rest and movement.
+            They don't replace medical care. For personal health concerns,
+            speak with a qualified health professional.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- ========== QUICK START ========== -->
-    <section id="quick-start" class="container">
-      <div class="split">
-        <div class="panel">
-          <h2>Workflow</h2>
-          <!-- Ordered list -->
+    <section class="stats-section section-space" aria-label="Harbor Health at a glance">
+      <div class="page-width stats-grid">
+        <div><strong>6</strong><span>wellbeing topics</span></div>
+        <div><strong>3</strong><span>featured topics</span></div>
+        <div><strong>4</strong><span>ways to take part</span></div>
+      </div>
+    </section>
+
+    <section class="section-space page-width">
+      <div class="section-heading">
+        <p class="eyebrow">Our sessions</p>
+        <h2>Everyday topics, open conversations</h2>
+        <p>Choose a topic that feels useful to you, or come along and listen.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <span class="card-number">01</span>
+          <h3>Food and meals</h3>
+          <p>Share simple meal ideas and talk about making the most of what you have at home.</p>
+        </article>
+        <article class="service-card">
+          <span class="card-number">02</span>
+          <h3>Moving a little more</h3>
+          <p>Find comfortable ways to add a little more movement to your day.</p>
+        </article>
+        <article class="service-card">
+          <span class="card-number">03</span>
+          <h3>Rest and stress</h3>
+          <p>Talk about winding down at night and getting better rest.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="details-section section-space">
+      <div class="page-width details-grid">
+        <div class="detail-panel">
+          <p class="eyebrow">A few ideas</p>
+          <h2>Start with what feels manageable.</h2>
           <ol>
-            <li>Plan the page structure</li>
-            <li>Write the HTML</li>
-            <li>Add styles with CSS</li>
-            <li>Test the pages, links and form</li>
+            <li>Take a short walk if that works for you.</li>
+            <li>Stand up and stretch after sitting for a while.</li>
+            <li>Try going to bed around the same time for a few nights.</li>
+            <li>Ask a health professional if you have a health concern.</li>
           </ol>
         </div>
-        <div class="panel">
-          <h2>Tools I Used</h2>
-          <!-- Unordered list -->
-          <ul class="styled">
-            <li>Code editor</li>
-            <li>Web browser</li>
-            <li>Git and GitHub</li>
-            <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+        <div class="detail-panel">
+          <p class="eyebrow">Taking part</p>
+          <h2>Join in your own way.</h2>
+          <ul>
+            <li>Ask questions whenever they come up.</li>
+            <li>Share your thoughts or just listen.</li>
+            <li>Take part at a pace that works for you.</li>
+            <li>Keep personal details to yourself.</li>
           </ul>
-          <div class="callout">
-            <span class="corner">Note</span>
-            <p>Use the browser's developer tools to inspect the page elements and styles.</p>
-          </div>
         </div>
+        <div class="detail-panel terms-panel">
+          <p class="eyebrow">Health words</p>
+          <h2>A few useful words</h2>
+          <dl>
+            <dt>Wellbeing</dt>
+            <dd>How you’re doing physically, mentally and in your day-to-day life.</dd>
+            <dt>Prevention</dt>
+            <dd>Things people can do that may lower the chance of some health problems.</dd>
+            <dt>Health literacy</dt>
+            <dd>Being able to find and make sense of health information.</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit-section page-width">
+      <div>
+        <p class="eyebrow">Our community</p>
+        <h2>Based in Nairobi</h2>
+        <p>Harbor Health brings neighbours together to talk about everyday health and wellbeing.</p>
+      </div>
+      <iframe
+        title="Map of Nairobi"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=36.8000%2C-1.3000%2C36.8400%2C-1.2700&amp;layer=mapnik"
+        loading="lazy">
+      </iframe>
+    </section>
+
+    <section class="join-strip">
+      <div class="page-width join-inner">
+        <div>
+          <p class="eyebrow">Have a question?</p>
+          <h2>We'd be glad to hear from you.</h2>
+        </div>
+        <a class="button button-light" href="register.html">Get in touch</a>
       </div>
     </section>
   </main>
 
-  <!-- ========== FOOTER ========== -->
-  <footer>
-    <p>
-      <a href="index.html">Home</a>
-      <a href="learn.html">Learn</a>
-      <a href="contact.html">Contact</a>
-    </p>
-    <p>&copy; 2026 Class Cipher. Built with HTML &amp; CSS.</p>
+  <footer class="site-footer">
+    <div class="page-width footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html"><span class="brand-mark">H</span><span>Harbor Health</span></a>
+        <p>Everyday wellbeing, supported by community.</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <a href="programs.html">Our sessions</a>
+        <a href="register.html">Contact us</a>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <a href="register.html">Send us a message</a>
+        <p>Nairobi</p>
+      </div>
+    </div>
+    <p class="copyright">Harbor Health · Nairobi</p>
   </footer>
-
-  <a href="#top" id="top-btn" title="Back to top">Top</a>
-
 </body>
 </html>

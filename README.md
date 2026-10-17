@@ -1,37 +1,18 @@
-# Class Cipher Website
+# Harbor Health
 
-A three-page website built with **HTML and CSS** for Class Cipher.
+A three-page community wellbeing website built with HTML and CSS. It introduces Harbor Health, its sessions, and a contact form.
 
 ## Pages
 
-| Page | File | What it shows |
-| --- | --- | --- |
-| Home | `index.html` | Hero, feature cards, stats, lists |
-| Learn | `learn.html` | Topic revision, description list, table, iframe |
-| Contact | `contact.html` | A full form using many input types |
+- `index.html` introduces Harbor Health and its approach to everyday wellbeing.
+- `programs.html` describes the session topics and format.
+- `register.html` contains a contact form layout.
 
-All pages share the same navigation bar and the stylesheet in `css/style.css`.
+## Project files
 
-## Topics practised
+- `static/css/index.css`
+- `static/css/programs.css`
+- `static/css/register.css`
+- `static/images/favicon.svg`
 
-**HTML:** basics, elements and attributes, headings and paragraphs, comments, links and images, favicon, tables, lists (ordered, unordered, description), div and IDs, buttons, iframes, forms, input types.
-
-**CSS:** selectors, comments, backgrounds and borders, margin and padding, height and width, box model, fonts and links, table styling, max-width, positioning and alignment, form styling.
-
-## Run it
-
-Open `index.html` in any browser. No build step is needed.
-
-## Folder structure
-
-```
-class-cipher-site/
-├── index.html
-├── learn.html
-├── contact.html
-├── css/
-│   └── style.css
-└── images/
-    ├── favicon.svg
-    └── hero.svg
-```
+Open `index.html` in a browser to view the site. The contact form is front-end only and needs a form handler before it can deliver submissions. The site provides general wellbeing information, not medical advice.
